@@ -1,0 +1,141 @@
+<div class="master-wrapper">
+    <h1>Hiremonk Signup and Signin</h1>
+    <div class="box-wrapper">
+        <div class="box">
+            <div class="box-tabs">
+                <div class="tab-item" id="login-tab">Log In</div>
+                <div class="tab-item active" id="signup-tab">Sign up</div>
+                <div class="clear-float"></div>
+            </div>
+            <div class="box-content-wrapper" id="login-box">
+                <div class="box-content">
+                    <form>
+                        <div class="box-item">
+                            <label class="input-group">
+                                <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </label>
+                        </div>
+                        <div class="box-item">
+                            <label class="input-group">
+                                <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                                <input type="password" class="form-control" placeholder="Password">
+                            </label>
+                        </div>
+                        <div class="box-item">
+                            <div class="wrapper-50 left">
+                                <label class="input-group" id="remember-me">
+                                    <input type="checkbox" class="id-group-addon"> 
+                                    <span>Remember Me</span>
+                                </label>
+                            </div><div class="wrapper-50 right" id="forgot-password">
+                            <span class="text-primary">Forgot your password</span>
+                        </div>
+                            <div class="clear-float"></div>
+                        </div>
+                        <div class="box-item" id="login-btn-wrapper">
+                            <div class="btn btn-success btn-lg btn-block" id="login-btn">
+                                Log in
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <h4 class="">Or connect with</h4>
+                    <div class="buttons-wrapper">
+							<span class="btn-group">
+								<span class="btn btn-lg btn-github">GitHub</span>
+								<span class="btn btn-lg btn-github">
+									<i class="fa fa-github-alt"></i>
+								</span>
+							</span>
+							<span class="btn-group">
+								<span class="btn btn-lg btn-linkedin">Linked</span>
+								<span class="btn btn-lg btn-linkedin">
+									<i class="fa fa-linkedin"></i>
+								</span>
+							</span>
+							<span class="btn-group">
+								<span class="btn btn-lg btn-facebook">Facebook</span>
+								<span class="btn btn-lg btn-facebook">
+									<i class="fa fa-facebook"></i>
+								</span>
+							</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-content-wrapper" id="signup-box">
+                <div class="box-content">
+                    <form name="loginForm" novalidate>
+                        <div class="box-item">
+                            <label class="input-group">
+                                <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                                <input type="text" class="form-control" ng-model="email" placeholder="Email">
+                            </label>
+                        </div>
+                        <div class="box-item">
+                            <label class="input-group">
+                                <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                <input type="text" class="form-control" ng-model="username" placeholder="Username">
+                            </label>
+                        </div>
+                        <div class="box-item">
+                            <label class="input-group">
+                                <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                                <input type="password" class="form-control" ng-model="password" placeholder="Password">
+                            </label>
+                        </div>
+                        <div class="box-item" id="login-btn-wrapper">
+                            <div class="btn btn-success btn-lg btn-block" id="signup-btn">Sign up</div>
+                        </div>
+                    </form>
+                    <hr>
+                    <h4 class="">Or connect with</h4>
+                    <div class="buttons-wrapper">
+							<span class="btn-group">
+								<span class="btn btn-lg btn-github">GitHub</span>
+								<span class="btn btn-lg btn-github">
+									<i class="fa fa-github-alt"></i>
+								</span>
+							</span>
+							<span class="btn-group">
+								<span class="btn btn-lg btn-linkedin">Linked</span>
+								<span class="btn btn-lg btn-linkedin">
+									<i class="fa fa-linkedin"></i>
+								</span>
+							</span>
+							<span class="btn-group">
+								<span class="btn btn-lg btn-facebook">Facebook</span>
+								<span class="btn btn-lg btn-facebook">
+									<i class="fa fa-facebook"></i>
+								</span>
+							</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $('#login-tab').on('click', function(){
+            if (!$('.tab-item.active').is(this)) {
+                $('.tab-item.active').removeClass('active');
+                $(this).addClass('active');
+                $('#signup-box').fadeOut(150, function(){
+                    $('#login-box').fadeIn(150);
+                });
+            }
+        });
+        $('#signup-tab').on('click', function(){
+            if (!$('.tab-item.active').is(this)) {
+                $('.tab-item.active').removeClass('active');
+                $(this).addClass('active');
+                $('#login-box').fadeOut(150, function(){
+                    $('#signup-box').fadeIn(150);
+                });
+            }
+        });
+    });
+</script>

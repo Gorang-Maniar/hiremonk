@@ -1,0 +1,37 @@
+Version 1.1.0 - : 
+
+  - Homepage Search Widget.
+  - Integrated Paypal.
+  - Live Search.
+  - Admin frontpage item type and status update bar.
+  - WooCommerce compatible (shop for admin). 
+  - Fixed a few bugs.
+
+  Changed files:
+
+  - functions.php
+  - css/main.css.php
+  - js/custom.js
+  - ReduxFramework/sample/sample-config.php
+  - header.php
+  - page.php
+  - template-full-width.php
+  - template-left-sidebar.php
+  - template-my-account.php
+  - template-single-company.php
+  - template-single-job.php
+  - template-single-resume.php
+
+
+  Added files
+
+  - template-my-account-paypal.php
+
+  Added folder
+
+ - paypal
+
+
+Version 1 - 07/25/2014:
+
+  - Initial release

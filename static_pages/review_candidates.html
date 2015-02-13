@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>HireMonk - Review Candidates</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">HireMonk</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">VIEW PROFILE</a></li>
+                            <li><a href="#">EDIT PROFILE</a></li>
+                            <li><a href="#">REVIEW CANDIDATES</a></li>
+                            <li><a href="#">POST JOB</a></li>
+                            <li><a href="#">SIGN OUT</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav nav-list">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a class="active" href="#A" data-toggle="tab">Job A</a>
+                        </li>
+                        <li>
+                            <a href="#B" data-toggle="tab">Job B</a>
+                        </li>
+                        <li>
+                            <a href="#C" data-toggle="tab">Job C</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row col-lg-3">
+                        Name
+                    </div>
+                    <div class="row col-lg-3">
+                        Position
+                    </div>
+                    <div class="row col-lg-3">
+                        Skills
+                    </div>
+                    <div class="row col-lg-2">
+                        Expirience
+                    </div>
+                    <div class="row col-lg-2">
+                        Selection
+                    </div>
+                </div>
+                <div class="col-lg-12" style="padding-top:20px">
+                    <div class="row col-lg-3">
+                        <a href="#">Mark</a>
+                    </div>
+                    <div class="row col-lg-3">
+                        Junior Consultant
+                    </div>
+                    <div class="row col-lg-3">
+                        Django,Bootstrap
+                    </div>
+                    <div class="row col-lg-2">
+                        2 Years
+                    </div>
+                    <div class="row col-lg-2">
+                        <label class="radio">
+                            <input type="radio" name="Mark" value="option1">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Mark" value="option1">
+                            No
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Mark" value="option1">
+                            Maybe
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row col-lg-3">
+                        <a href="#">John</a>
+                    </div>
+                    <div class="row col-lg-3">
+                        Graphic Designer
+                    </div>
+                    <div class="row col-lg-3">
+                        Graphic Designing,CSS,BootStrap
+                    </div>
+                    <div class="row col-lg-2">
+                        1.5 Years
+                    </div>
+                    <div class="row col-lg-2">
+                       <label class="radio">
+                            <input type="radio" name="John" value="option1">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="John" value="option1">
+                            No
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="John" value="option1">
+                            Maybe
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row col-lg-3">
+                        <a href="#">Jessy</a>
+                    </div>
+                    <div class="row col-lg-3">
+                        Senior Manager
+                    </div>
+                    <div class="row col-lg-3">
+                        Web2Py
+                    </div>
+                    <div class="row col-lg-2">
+                        4 Years
+                    </div>
+                    <div class="row col-lg-2">
+                       <label class="radio">
+                            <input type="radio" name="Jessy" value="option1">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Jessy"value="option1">
+                            No
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Jessy"value="option1">
+                            Maybe
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row col-lg-3">
+                        <a href="#">Wilson</a>
+                    </div>
+                    <div class="row col-lg-3">
+                        Assistant Manager
+                    </div>
+                    <div class="row col-lg-3">
+                        Django
+                    </div>
+                    <div class="row col-lg-2">
+                        3 Years
+                    </div>
+                    <div class="row col-lg-2">
+                       <label class="radio">
+                            <input type="radio" name="Wilson" value="option1">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Wilson" value="option1">
+                            No
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Wilson"  value="option1">
+                            Maybe
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row col-lg-3">
+                        <a href="#">Anderson</a>
+                    </div>
+                    <div class="row col-lg-3">
+                        Graphic Designer
+                    </div>
+                    <div class="row col-lg-3">
+                        Graphic Designing,CSS,BootStrap
+                    </div>
+                    <div class="row col-lg-2">
+                        1.5 Years
+                    </div>
+                    <div class="row col-lg-2">
+                       <label class="radio">
+                            <input type="radio" name="Anderson" value="option1">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Anderson" value="option1">
+                            No
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Anderson" value="option1">
+                            Maybe
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row col-lg-3">
+                        <a href="#">Mary</a>
+                    </div>
+                    <div class="row col-lg-3">
+                       Senior Consultant
+                    </div>
+                    <div class="row col-lg-3">
+                        Tornado
+                    </div>
+                    <div class="row col-lg-2">
+                        1.5 Years
+                    </div>
+                    <div class="row col-lg-2">
+                       <label class="radio">
+                            <input type="radio" name="Mary" value="option1">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Mary" value="option1">
+                            No
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Mary" value="option1">
+                            Maybe
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="footer">
+            <div class="row">
+                <h4>HireMonk</h4>
+            </div>
+            <div class="row">
+                <a href="#" class="my-btn3">HOME</a>
+                <a href="#" class="my-btn3">FAQ</a>
+                <a href="#" class="my-btn3">CONTACT</a>
+                <a href="#" class="my-btn3">CAREERS</a>
+            </div>
+            <div class="row">
+                <h6> <span class="glyphicon glyphicon-copyright-mark"></span> 2014 HireMonk.All rights reserved.</h6>
+            </div>
+        </div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

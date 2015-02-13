@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>WPJobus Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="assets/blueprint-css/image.css" type="text/css">
+	<link rel="stylesheet" href="assets/js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />	
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+	<script type='text/javascript' src='assets/js/jquery.js'></script>
+	<script src="assets/js/prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>	
+	<script type='text/javascript' src='assets/js/custom.js'></script>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;<span class="center">WPJobus - Job Board and Resumes WordPress Theme</span>&rdquo; Documentation by &ldquo;Alex Gurghis&rdquo; v1.0</h3>
+		
+		<hr/>
+<h1 class="center">&ldquo;WPJobus - Job Board and Resumes WordPress Theme&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 20/07/2014<br>
+					By: Alex Gurghis<br>
+					Email: <a href="mailto:agurghis@gmail.com">Alex Gurghis</a>
+					</strong>				</p>
+				<p class="prepend-top"><span class="small">Informations about Updates and New Themes are always announced on <a href="http://twitter.com/agurghis">Twitter</a> and <a href="https://www.facebook.com/themesdojo">Facebook</a>. Twitter updates are usually more up to date, Facebook updates are more detailed and easier to follow :)</span><br/>
+				</p>
+</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0"><strong>Hello! First of all I would like to thank you for purchasing my theme! :) </strong><br></p>
+				<p class="prepend-top append-0">This file will teach you how to set up and use the “WPJobus”  WordPress Theme. <br>
+					This file is really extensive so you might think the theme is hard to use, <br>
+					actually its not, you probably just might jump to the options page and explore everything yourself, this file is more of a reference work if you do not know what to do, or if you are not familiar to WordPress.</p>
+				<!--<p class="prepend-top append-0">In addition to this file I recorded several screencasts that might help you to setup and install the theme. Since English ain't my first	language	I	appologize upfront for my bad grammar and  pronunciation :)</p>-->
+				<p class="prepend-top append-0">Have fun with your new theme! best regards<br>
+				<strong>Alex Gurghis</strong></p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr/>
+<div class='toc'>
+<h2 id="toc" class="alt">Table of Contents</h2>
+<ol class="alpha">
+	<li><a href="#folderStructure">Folder Structure</a></li>
+	<li><a href="#installation">Installation and setup (to get it like in our demo)</a>
+		<ol>
+			<li><a href="#install-theme">Install theme</a></li>
+			<li><a href="#install-plugins">Install plugins</a></li>
+			<li><a href="#install-redux">Import ReduxFramework Settings</a></li>
+			<li><a href="#install-layerslider">Import LayerSlider content</a></li>
+			<li><a href="#install-content">Import dummy content</a></li>
+		</ol>	
+	</li>
+	<li><a href="#b1">Setting up the Theme Options</a>
+		<ol>
+			<li><a href="#general">General</a></li>
+			<li><a href="#options-pages">Resume/Job/Company Settings</a></li>
+			<li><a href="#payment">Payment settings</a></li>
+			<li><a href="#prices">Prices</a></li>
+			<li><a href="#options-fonts">Fonts</a></li>
+			<li><a href="#options-colors">Colors</a></li>
+			<li><a href="#options-social-links">Top Social Links</a></li>
+			<li><a href="#options-contact">Contact Page Settings</a></li>
+		</ol>	
+	</li>
+	<li><a href="#htmlStructure">HTML Structure</a></li>
+	<li><a href="#cssFiles">CSS Files and Structure</a></li>
+	<li><a href="#javascript">JavaScript</a></li>
+</ol>
+</div>
+<hr/>
+<div class='real_content'>
+<h3 id="folderStructure"><strong>Folder Structure of WPJobus</strong> - <a href="#toc">top</a></h3>
+        <p>The Theme is built with WordPress best practices in mind, therefore it makes heavy use of the WordPress template engine. What exactly does that mean?</p>
+        <p>Whenever you see a php function call like this within your php files (get_header(), get_footer() or get_sidebar() ) the theme retrieves a reusable code snippet, most of the time a chunk of code that is used in many different files.</p>
+        <ul>
+        	<li>This approach has the benefit that you can edit a single code snippet and the changes will effect many page templates</li>
+            <li>Its still easy to only change a single page template since you can simply include a modified copy of the snippet instead of the original one</li>
+            <li>Last but not least it makes the folder structure clear and tidy</li>
+        </ul>
+      <p>Apart from the php structure the theme uses a lot of modern CSS3 features, most notably the power of media queries to serve different layouts for different viewport sizes. If you use a modern browser (IE9 +, Chrome, Safari, Firefox) and resize your browser window you will realize that the theme adapts its size to the viewport.</p>
+<p>&nbsp;</p>
+<hr/>
+<h3 id="installation"><strong>Installation</strong> - <a href="#toc">top</a></h3>
+
+<span id="install-theme"><strong>2.1 Install theme - <a href="#toc">top</a></strong></span>
+		<p><br>
+
+		<strong>Step #1</strong><br /><br />
+
+	    You can either choose to upload the theme to your server via FTP (only upload the <strong>unzipped folder</strong> „WPJobus“ into the folder wp-content/themes/ ) or via WordPress upload function. To use the upload function of  the WordPress admin panel make sure to ONLY upload  the “<strong>WPJobus</strong>” folder and not the whole archive file that you received by ThemeForest. </p>
+
+		<strong>Step #2</strong><br /><br />
+
+		Go to “Themes” menu and upload your theme, then hit “Activate” button.
+
+		<br /><br />
+
+		<img src="assets/images/activate.png" width="778" height="872" class="bordergrey_leftttbottom">
+
+		<br /><br />
+
+
+</p>
+
+<span id="install-plugins"><strong>2.2 Install plugins - <a href="#toc">top</a></strong></span>
+
+<p>After the theme activation you'll see an info box about installing some plugins:</p>
+
+<img src="assets/images/plugins.png" class="bordergrey_leftttbottom"><br>
+
+<p>Click on the "Begin Installation" button.</p>
+
+<img src="assets/images/all-plugins.png" class="bordergrey_leftttbottom"><br>
+
+<p>To get all the features you see on our demo, make sure you install all the plugins.</p>
+  
+<hr/>
+
+
+<span id="install-redux"><strong>2.3 Import ReduxFramework Settings - <a href="#toc">top</a></strong></span>
+
+<p>Go to <i>Dashboard -> Options</i> (see 1 in the bellow picture) -> <i>Import</i> (2) -> <i>Import from file</i> (3). Go to "Demo content" folder, open "redux.json" file in "ReduxFramework Settings" with a text editor, copy everything inside it and paste in the import field. Click import (4).</p>
+
+<img src="assets/images/redux.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>
+
+
+<span id="install-layerslider"><strong>2.4 Import LayerSlider content - <a href="#toc">top</a></strong></span>
+
+<p>Go to dashboard -> LayerSlider WP -> On import block select the file located in Demo Conent/LayerSLider Demo Content folder and click "Import"</p>
+
+<img src="assets/images/layerslider.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>
+
+
+<span id="install-content"><strong>2.5 Import demo content - <a href="#toc">top</a></strong></span>
+
+<p>If you are new to wordpress or have problems creating posts or pages that look like the theme preview you can import dummy posts and pages here that will definitley help to understand how those tasks are done. Go to Dashboard -> Demo Content and click on "Import Dummy Content". Please wait a few seconds and dont reload the page. You will be notified as soon as the import has finished!</p>
+
+<img src="assets/images/import-content.png" class="bordergrey_leftttbottom"><br>
+
+<div class="box-notification"><div class="box-notification-content">After the import you'll have to setup the homepage as static and select home from Dashboard -> Settings -> Reading. You also will have to add your widgets.</div></div>
+  
+<hr/>
+
+
+
+<h3 id="b1"><strong>Setting up the Theme Options  - <a href="#toc">top</a></strong></h3>
+
+
+
+<p>If you want to change the general Options of the Theme open the “WPJobus” Theme Options Panel (located in your admin sidebar) and click it, you will notice several tabs with options, which we will discuss now one by one.</p>
+
+
+<hr/>
+
+
+
+<span id="general"><strong>General - <a href="#toc">top</a></strong></span>
+<p>Here you will add the logo, favicon and google analitycs id, google map styles.</p>
+
+<div class="box-notification"><div class="box-notification-content">You can setup your website to be a <strong>standalone resume page</strong> or a <strong>standalone company page</strong> or a <strong>job board/resume portal</strong>. Just select the website type and from Settings -> Reading activate the option hompage static and select the resume/company profile.</div></div>
+
+<img src="assets/images/general.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>  
+
+
+<span id="options-pages"><strong>Resume/Job/Company Settings - <a href="#toc">top</a></strong></span>
+<p>Here you will add industries. Will setup the publish state (pending review or publish).</p>
+
+<img src="assets/images/pages-1.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>
+
+
+<span id="payment"><strong>Payment settings - <a href="#toc">top</a></strong></span>
+<p>Here you will setup the <a href="https://stripe.com/" target="_blank">stripe</a> payment settings.</p>
+
+<img src="assets/images/recipe-settings.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>
+
+
+
+<span id="prices"><strong>Prices - <a href="#toc">top</a></strong></span>
+<p>Here you will setup the prices for each category. Leave empty for free but for featured empty means no feature option available. Also you will can setup the feature available time. After expiration it becomes regular (free).</p>
+
+<img src="assets/images/price.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>
+
+
+
+<span id="options-fonts"><strong>Fonts - <a href="#toc">top</a></strong></span>
+<p>Here you can change the font. Ther are available 650+ Google fonts.</p>
+
+<img src="assets/images/font.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>
+
+
+
+<span id="options-colors"><strong>Colors - <a href="#toc">top</a></strong></span>
+<p>Here you can change the colors. Choose from the existing color scheme presets or create your own!</p>
+
+<img src="assets/images/color.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>
+
+
+
+<span id="options-social-links"><strong>Top Social Links - <a href="#toc">top</a></strong></span>
+<p>Here you can add the social links.</p>
+
+<img src="assets/images/social.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>
+
+<span id="options-contact"><strong>Contact Page Settings - <a href="#toc">top</a></strong></span>
+<p>Here you can asetup the contact page.</p>
+
+<img src="assets/images/contact.png" class="bordergrey_leftttbottom"><br>
+  
+<hr/>
+
+
+<h3 id="htmlStructure"><strong>HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>The Theme uses valid HTML and comes with predefined classes for common elements needed in web design.<br/>
+
+All templates share basic elements like header, footer, main, and entry so be carefull when editing those or adding/changing the CSS for those ids and classes :)</p>
+
+<hr/>
+
+
+<h3 id="cssFiles"><strong>CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>The CSS for the theme is split into various files: one that holds the basic markup for layout which is called style.css.</p>
+
+
+		
+<hr/>
+<h3 id="javascript"><strong>JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The theme uses advanced jQuery functions. You do not need to know how to use jQuery to activate them, almost everything is controlled by WordPress. All the function calls as well as as the custom created jQuery plugins are located in the custom.js file.<br></p>
+
+<hr/>
+
+<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p> 
+		
+		<p class="append-bottom alt large"><strong>Alex Gurghis</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+      </p></div>
+</div><!-- end div .container -->
+</body>
+</html>

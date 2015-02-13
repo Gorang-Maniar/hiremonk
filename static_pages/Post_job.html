@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>HireMonk - Post Job</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">HireMonk</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">VIEW PROFILE</a></li>
+                            <li><a href="#">EDIT PROFILE</a></li>
+                            <li><a href="#">REVIEW CANDIDATES</a></li>
+                            <li><a href="#" class="active">POST JOB</a></li>
+                            <li><a href="#">SIGN OUT</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container-fluid main-head">
+            <h2>Post A Job</h2>
+        </div>
+        
+        <div class="container-fluid main">
+            <div class="col-md-6 col-md-offset-3">
+                <form role="form">
+                    <div class="row my-row">
+                        <div class="row">
+                            <label class="post-label"><i style="color:red;">*</i> Job Title</label>
+                        </div>
+                        <div class="row">
+                            <input type="text" class="form-control input-xlarge"  name="job-description" placeholder="Give the Title for your Job" required="required">
+                        </div>
+                    </div>
+                    <div class="row my-row">
+                        <div class="row">
+                            <label class="post_label"><i style="color:red;">*</i> Job Description</label>
+                        </div>
+                        <div class="row">
+                            <textarea name="comments" class="form-control input-xlarge" placeholder="Description of the job that you want to do..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row my-row">
+                        <div class="row">
+                            <label class="post_label"><i style="color:red;">*</i> Role</label>
+                        </div>
+                        <div class="row">
+                            <input type="text" class="form-control input-xlarge" name="role" placeholder="The position you are offering" required="required">
+                        </div>
+                    </div>
+
+                    <div class="row my-row">
+                        <div class="row">
+                            <label class="post_label"><i style="color:red;">*</i> Location</label>
+                        </div>
+                        <div class="row">
+                            <input type="text" class="form-control input-xlarge" name="location" placeholder="Work Location" required="required">
+                        </div>
+                    </div>
+
+                    <div class="row my-row">
+                        <div class="row">
+                            <label class="post_label"><i style="color:red;">*</i> Compensation offered</label>
+                        </div>
+                        <div class="row">
+                            <input type="text" class="form-control input-xlarge" name="compensation-offered" placeholder="Tentative compensation ofered" required="required">
+                        </div>
+                    </div>
+
+                    <div class="row my-row">
+                        <div class="row">
+                            <label class="post_label"><i style="color:red;">*</i> Skills Required</label>
+                        </div>
+                        <div class="row">
+                            <input type="text" class="form-control input-xlarge" name="skills-required" placeholder="Please give a brief description" required="required">
+                        </div>
+                    </div>
+
+                    <div class="row my-row">
+                        <div class="row">
+                            <label class="post_label"><i style="color:red;">*</i> Joining Date</label>
+                        </div>
+                        <div class="row">
+                            <input type="date" min="2010-08-14" max="2011-08-14" class="form-control input-xlarge" name="joining-date" placeholder="010-08-14 : Tentative joining date" required="required">
+                        </div>
+                    </div>
+
+                    <div class="row my-row">
+                        <div class="row">
+                            <label class="post_label">Comments</label>
+                        </div>
+                        <div class="row">
+                            <textarea name="comments" class="form-control input-xlarge" placeholder="Anything else you might want to say..."></textarea>
+                        </div>
+                    </div>
+                    <p style="color:red"> * Feilds Are Mandatory </p> 
+                    <div class="row my-row submit-btn">
+                        <a href="#" class="my-btn">SUBMIT</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container-fluid" id="footer">
+            <div class="row">
+                <h4>HireMonk</h4>
+            </div>
+            <div class="row">
+                <a href="#" class="my-btn3">HOME</a>
+                <a href="#" class="my-btn3">FAQ</a>
+                <a href="#" class="my-btn3">CONTACT</a>
+                <a href="#" class="my-btn3">CAREERS</a>
+            </div>
+            <div class="row">
+                <h6> <span class="glyphicon glyphicon-copyright-mark"></span> 2014 HireMonk.All rights reserved.</h6>
+            </div>
+        </div>
+
+		
+	</body>
+</html>

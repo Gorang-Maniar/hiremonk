@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login | Signup</title>
+	<meta charset="utf-8" />
+	
+	<script src="js/jquery-2.1.1.min.js"></script>
+	
+	<link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Quicksand' rel='stylesheet' type='text/css'>
+	<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Quicksand", sans-serif;
+}
+h1 {
+	font-family: "Poiret One", sans-serif;
+	text-align: center;
+	font-size: 3em;
+}
+.box-wrapper {
+	
+}
+.box {
+	width: 500px;
+	margin: auto;
+	border: 1px solid #C2C7D0;
+	border-radius: 4px;
+}
+
+.tab-item {
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0.5em;
+	background-color: #eee;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+.tab-item.active {
+	background-color: #fff;
+	font-weight: 600;
+}
+
+.clear-float {
+	clear: both;
+}
+
+.box-content-wrapper {
+	padding: 50px;
+}
+
+
+.box-item {
+	margin: 1.5em auto;
+}
+
+.wrapper-50 {
+	width: 50%;
+	height: 2em;
+	float: left;
+	line-height: 2em;
+	font-size: 1em;
+}
+
+input, label {
+	font-weight: 500;
+}
+
+#forgot-password{
+	font-weight: 500;
+	text-align: right;
+}
+
+#login-btn, #signup-btn {
+	width: 60%;
+	margin: auto;
+}
+
+
+hr {
+	margin:25px auto;
+}
+
+.buttons-wrapper {
+	text-align: center;
+	font-size: 1em;
+}
+
+.buttons-wrapper .btn-lg{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+	border-color: #fff;
+}
+
+.buttons-wrapper .btn-group .btn:first-child {
+	padding-left: 10px;
+	padding-right: 6px;
+	text-align: center;
+}
+.buttons-wrapper .btn-group .btn:last-child  {
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
+}
+
+.btn-linkedin:first-child {
+	background-color: #006ba6;
+}
+
+.btn-linkedin:last-child {
+	background-color: #007bb6;
+}
+
+.btn-github:first-child {
+  background-color: #3071a9;
+	background-color: #3173b4;
+}
+
+.btn-github:last-child {
+  background-color: #428bca;
+	background-color: #4183c4;
+}
+
+.btn-facebook:first-child {
+	background-color: #2b4988;
+}
+
+.btn-facebook:last-child {
+	background-color: #3b5998;
+}
+
+
+#login-box {
+	display: none;
+}
+
+/*0px 3px 5px rgba(0, 0, 0, 0.125) inset
+	</style>
+</head>
+<body>
+	<div class="master-wrapper">
+		<h1>HireMonk</h1>
+		<div class="box-wrapper">
+			<div class="box">
+				<div class="box-tabs">
+					<div class="tab-item" id="login-tab">Log In</div>
+					<div class="tab-item active" id="signup-tab">Sign up</div>
+					<div class="clear-float"></div>
+				</div>
+				<div class="box-content-wrapper" id="login-box">
+					<div class="box-content">
+						<form>
+							<div class="box-item">
+								<label class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-user"></span><input type="text" class="form-control" placeholder="Username">
+								</label>
+							</div>
+							<div class="box-item">
+								<label class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-lock"></span><input type="password" class="form-control" placeholder="Password">
+								</label>
+							</div>
+							<div class="box-item">
+								<div class="wrapper-50 left">
+									<label class="input-group" id="remember-me">
+										<input type="checkbox" class="id-group-addon"> <span>Remember Me</span>
+									</label>
+								</div><div class="wrapper-50 right" id="forgot-password">
+									<span class="text-primary">Forgot your password</span>
+								</div>
+								<div class="clear-float"></div>
+							</div>
+							<div class="box-item" id="login-btn-wrapper">
+								<div class="btn btn-success btn-lg btn-block" id="login-btn">Log in</div>
+							</div>
+						</form>
+						<hr>
+						<h4 class="">Or connect with</h4>
+						<div class="buttons-wrapper">
+							<span class="btn-group">
+								<span class="btn btn-lg btn-github">GitHub</span>
+								<span class="btn btn-lg btn-github">
+									<i class="fa fa-github-alt"></i>
+								</span>
+							</span>
+							<span class="btn-group">
+								<span class="btn btn-lg btn-linkedin">Linked</span>
+								<span class="btn btn-lg btn-linkedin">
+									<i class="fa fa-linkedin"></i>
+								</span>
+							</span>
+							<span class="btn-group">
+								<span class="btn btn-lg btn-facebook">Facebook</span>
+								<span class="btn btn-lg btn-facebook">
+									<i class="fa fa-facebook"></i>
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="box-content-wrapper" id="signup-box">
+					<div class="box-content">
+						<form>
+							<div class="box-item">
+								<label class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-envelope"></span><input type="text" class="form-control" placeholder="Email">
+								</label>
+							</div>
+							<div class="box-item">
+								<label class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-user"></span><input type="text" class="form-control" placeholder="Username">
+								</label>
+							</div>
+							<div class="box-item">
+								<label class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-lock"></span><input type="password" class="form-control" placeholder="Password">
+								</label>
+							</div>
+							<div class="box-item" id="login-btn-wrapper">
+								<div class="btn btn-success btn-lg btn-block" id="signup-btn">Sign up</div>
+							</div>
+						</form>
+						<hr>
+						<h4 class="">Or connect with</h4>
+						<div class="buttons-wrapper">
+							<span class="btn-group">
+								<span class="btn btn-lg btn-github">GitHub</span>
+								<span class="btn btn-lg btn-github">
+									<i class="fa fa-github-alt"></i>
+								</span>
+							</span>
+							<span class="btn-group">
+								<span class="btn btn-lg btn-linkedin">Linked</span>
+								<span class="btn btn-lg btn-linkedin">
+									<i class="fa fa-linkedin"></i>
+								</span>
+							</span>
+							<span class="btn-group">
+								<span class="btn btn-lg btn-facebook">Facebook</span>
+								<span class="btn btn-lg btn-facebook">
+									<i class="fa fa-facebook"></i>
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('#login-tab').on('click', function(){
+				if (!$('.tab-item.active').is(this)) {
+					$('.tab-item.active').removeClass('active');
+					$(this).addClass('active');
+					$('#signup-box').fadeOut(150, function(){
+						$('#login-box').fadeIn(150);
+					});
+				}
+			});
+			$('#signup-tab').on('click', function(){
+				if (!$('.tab-item.active').is(this)) {
+					$('.tab-item.active').removeClass('active');
+					$(this).addClass('active');
+					$('#login-box').fadeOut(150, function(){
+						$('#signup-box').fadeIn(150);
+					});
+				}
+			});
+		});
+	</script>
+</body>
+</html>
